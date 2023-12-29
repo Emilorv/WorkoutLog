@@ -1,1 +1,2 @@
-#App for logging workouts
+# WorkoutLog
+App for logging workouts
