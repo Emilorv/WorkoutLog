@@ -1,26 +1,25 @@
-import Message from "./Message.tsx";
-import Footer from "./components/Footer.tsx";
-import NavBar from "./components/NavBar.tsx";
+import Layout from "./pages/Layout.tsx"
 import './components/general.css'
-import ListWorkouts from "./components/ListWorkouts.tsx";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Home from "./pages/Home.tsx";
+import NoPage from "./pages/NoPage.tsx";
+import Profile from "./pages/Profile.tsx";
+import WorkoutsPage from "./pages/WorkoutsPage.tsx";
+import SessionsPage from "./pages/SessionsPage.tsx";
 
 
 function App(){
-
-    const workouts = [
-            {'id':0,'name':"benk", 'weight': 23, 'set':3, 'reps': 12},
-        {'id':0,'name':"press", 'weight': 23, 'set':3, 'reps': 12},
-    ]
-    console.log(workouts)
-    return <div>
-        <NavBar/>
-    <div className="container">
-        <ListWorkouts workoutList={workouts}/>
-        <Message></Message>
-        <Footer></Footer>
-    </div>
-    </div>
-
+    return<BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Layout/>}>
+                <Route index element={<Home/>}/>
+                <Route path="/sessionsPage" element={<SessionsPage/>}/>
+                <Route path="/workoutsPage" element={<WorkoutsPage/>}/>
+                <Route path="/profile" element={<Profile/>}/>
+            <Route path="*" element={<NoPage/>}/>
+            </Route>
+            </Routes>
+        </BrowserRouter>
 }
 
 export default App;
