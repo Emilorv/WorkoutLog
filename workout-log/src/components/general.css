@@ -1,0 +1,11 @@
+
+body{
+    background-image: linear-gradient(to right, #6F9F9C, #577E89);
+
+}
+.container{
+    margin: 10px 20% 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
