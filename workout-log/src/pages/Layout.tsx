@@ -1,10 +1,10 @@
 import {Outlet, Link} from "react-router-dom";
 import '../components/navBar.css'
 function Layout(){
-    const homeIcon = "public/icons/Home.svg"
-    const sessionIcon = "public/icons/List.svg"
-    const workoutIcon = "public/icons/Exercise.svg"
-    const profileIcon = "public/icons/Account circle.svg"
+    const homeIcon = "icons/Home.svg"
+    const sessionIcon = "icons/List.svg"
+    const workoutIcon = "icons/Exercise.svg"
+    const profileIcon = "icons/Account circle.svg"
 
     return<>
         <Outlet/>
