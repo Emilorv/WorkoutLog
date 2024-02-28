@@ -1,0 +1,29 @@
+{
+  "users": [
+    {"id": 0, "name": "Emil", "dateCreated": "2024-02-24", "sessions": [
+      {"id":0, "name":"Legday", "date": "2024-02-25", "time": "21:30", "duration":90,
+        "exercises":[
+          {"id":0, "name": "Deadlift", "sets":[
+            {"number":1, "reps":12, "weight": 30},
+            {"number":2, "reps":12, "weight": 30},
+            {"number":3, "reps":12, "weight": 25}]},
+          {"id":1, "name":"Squats", "sets":[
+            {"number":1, "reps":12, "weight": 60},
+            {"number":2, "reps":12, "weight": 50},
+            {"number":3, "reps":10, "weight": 40}]}
+        ]},
+      {"id":1, "name":"Bodyday", "date": "2024-02-26", "time": "21:30", "duration":90,
+      "exercises":[
+        {"id":3, "name": "Benk", "sets":[
+          {"number":1, "reps":12, "weight": 30},
+          {"number":2, "reps":12, "weight": 30},
+          {"number":3, "reps":12, "weight": 25}]},
+        {"id":4, "name":"Curls", "sets":[
+          {"number":1, "reps":12, "weight": 60},
+          {"number":2, "reps":12, "weight": 50},
+          {"number":3, "reps":10, "weight": 40}]
+        }
+    ]}
+  ]}
+  ]
+}

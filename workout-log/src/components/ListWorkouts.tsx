@@ -4,11 +4,11 @@ interface ListWorkoutProps {
 }
 const ListWorkouts: React.FC<ListWorkoutProps> =
 function WorkoutListComponent({workoutList}){
-    return workoutList.map((workout) => {
-            return <div className={"container"}>
-                <h1 key={workout.id}>{workout.name}</h1>
+    return workoutList.map((workout, key) => {
+            return <div key={key} className={"container"}>
+                <h1 >{workout.name}</h1>
                 <p>{workout.weight}</p>
-                <p>{workout.set}</p>
+                <p>{workout.set}</p> b
                 <p>{workout.reps}</p>
             </div>
         }
