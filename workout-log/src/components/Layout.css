@@ -1,4 +1,7 @@
-
+.page{
+    background-color:#79031D;
+    height: 100vh;
+}
 
 .navBar{
     position:fixed;
@@ -25,4 +28,12 @@
     display: block;
     margin: auto;
     height: 80%;
+}
+
+.startWorkoutButton{
+    height: 80%;
+    background-color: white;
+    bottom: 50px;
+    border: solid black;
+    border-radius: 10px;
 }
