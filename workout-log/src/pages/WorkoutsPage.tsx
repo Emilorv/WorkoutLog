@@ -14,7 +14,7 @@ function WorkoutsPage(){
         setAddPaneState(false)
     }
     return <>
-        <img onClick={()=> setAddPaneState(!IsAddPaneOpen)} className="AddButton" alt="Add-button" src="/icons/Add.svg"/>
+        <img tabIndex={2} onClick={()=> setAddPaneState(!IsAddPaneOpen)} className="AddButton" alt="Add-button" src="/public/icons/Add.svg"/>
         <AddExercisePane visible={IsAddPaneOpen} closePane={closePane}></AddExercisePane>
         <h1>Workouts Page</h1>
         <h1>Is Open? {IsAddPaneOpen ? "Yes":"NO"}</h1>
